@@ -1,1 +1,7 @@
 # Image / Sound file licenses
+- covid_image, CC BY-SA 3.0 license, https://www.iconfinder.com/icons/5730675/bacteria_corona_corona_virus_coronavirus_covid-19_virus_icon
+- covid_image_64x, CC BY-SA 3.0 license, https://www.iconfinder.com/icons/5730675/bacteria_corona_corona_virus_coronavirus_covid-19_virus_icon
+- safety_icon, free icon, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon
+- safety_icon_64x. free icon, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon
+- statistics_image, CC BY 3.0 license, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon
+- statistics_image_64x, CC BY 3.0 license, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon

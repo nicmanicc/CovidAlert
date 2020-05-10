@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CovidAlert</string>
+    <string name="total_confirmed_label">Confirmed:</string>
+    <string name="total_recovered_label">Recovered:</string>
+    <string name="total_deaths_label">Deaths:</string>
+    <string name="information_label">About COVID-19</string>
+    <string name="safety_button">Protect Yourself</string>
+    <string name="statistics_button">Statistics</string>
+    <string name="summary">Summary</string>
 </resources>

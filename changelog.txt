@@ -1,4 +1,9 @@
 # Week 1
-- Project and project repository created.
-- Necessary files created (readme, changelog, licenses)
-- Created the main menu wireframe
+ > May 7th
+ - Project and project repository created.
+ - Necessary files created (readme, changelog, licenses)
+ > May 10th
+ - Created the main menu wireframe
+ - Updated licenses with icons used in main menu wireframe
+ > Summary (Written May 10th)
+ - Slow week in terms of app production due to getting the project proposal done. A little behind on my desired weekly milestone goal as I    wanted to have created all the wireframes this week. Next week will be a much more productive week now that the project proposal is out    of the way.

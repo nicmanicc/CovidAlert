@@ -7,3 +7,15 @@
  - Updated licenses with icons used in main menu wireframe
  > Summary (Written May 10th)
  - Slow week in terms of app production due to getting the project proposal done. A little behind on my desired weekly milestone goal as I    wanted to have created all the wireframes this week. Next week will be a much more productive week now that the project proposal is out    of the way.
+# Week 2
+ > May 11th
+ - Created StatisticActivity for the statistic section
+ - Created StatisticAdapter & Statistic files for RecyclerView in StatisticActivity
+ - Created APIHandler for requesting JSON from Covid19 API.
+ - Parsed JSON data from Covid19 API and filled RecyclerView with Country name, Confirmed Cases, Recovered Cases and Death Cases.
+ #TO-DO
+ - Add progress bar
+ - Add search functionality
+ - Add wireframe design
+ - Add date updated
+ - Comment

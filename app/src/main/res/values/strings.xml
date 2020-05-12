@@ -7,4 +7,8 @@
     <string name="safety_button">Protect Yourself</string>
     <string name="statistics_button">Statistics</string>
     <string name="summary">Summary</string>
+    <string name="summary_confirmed">CONFIRMED</string>
+    <string name="summary_Recovered">RECOVERED</string>
+    <string name="summary_death">DEATHS</string>
+    <string name="summary_title">WORLDWIDE COVID-19 CASES</string>
 </resources>

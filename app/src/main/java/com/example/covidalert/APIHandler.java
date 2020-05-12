@@ -40,6 +40,7 @@ public class APIHandler {
             public void onResponse(Call call, Response response) throws IOException {
                 if (response.isSuccessful()) {
                     String myResponse = response.body().string();
+
                     StatisticActivity activity = statisticActivityWeakReference.get();
                     if (activity != null)
                     {

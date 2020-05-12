@@ -13,9 +13,10 @@
  - Created StatisticAdapter & Statistic files for RecyclerView in StatisticActivity
  - Created APIHandler for requesting JSON from Covid19 API.
  - Parsed JSON data from Covid19 API and filled RecyclerView with Country name, Confirmed Cases, Recovered Cases and Death Cases.
+ > May 12th
+ - Added wireframe design
+ - Created text view to show date the data was last updated
+ - Added circular progress bar
  #TO-DO
- - Add progress bar
  - Add search functionality
- - Add wireframe design
- - Add date updated
  - Comment

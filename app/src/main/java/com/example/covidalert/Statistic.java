@@ -1,13 +1,41 @@
 package com.example.covidalert;
 
 public class Statistic {
-    private String countryName, confirmedCases, recoveredCases, deathCases;
+    private String countryName, confirmedCases, recoveredCases, deathCases, newConfirmed, newRecovered, newDeath;
 
-    public Statistic(String countryName, String confirmedCases, String recoveredCases, String deathCases) {
+    public Statistic(String countryName, String confirmedCases, String recoveredCases,
+                     String deathCases, String newConfirmed, String newRecovered, String newDeath) {
         this.countryName = countryName;
         this.confirmedCases = confirmedCases;
         this.recoveredCases = recoveredCases;
         this.deathCases = deathCases;
+        this.newConfirmed = newConfirmed;
+        this.newRecovered = newRecovered;
+        this.newDeath = newDeath;
+    }
+
+    public String getNewConfirmed() {
+        return newConfirmed;
+    }
+
+    public void setNewConfirmed(String newConfirmed) {
+        this.newConfirmed = newConfirmed;
+    }
+
+    public String getNewRecovered() {
+        return newRecovered;
+    }
+
+    public void setNewRecovered(String newRecovered) {
+        this.newRecovered = newRecovered;
+    }
+
+    public String getNewDeath() {
+        return newDeath;
+    }
+
+    public void setNewDeath(String newDeath) {
+        this.newDeath = newDeath;
     }
 
     public String getCountryName() {

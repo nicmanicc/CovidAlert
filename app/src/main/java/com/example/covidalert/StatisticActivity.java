@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 
@@ -19,6 +20,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
 
 public class StatisticActivity extends AppCompatActivity implements APIHandler.CallBack {
 
@@ -35,9 +37,21 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statistic);
 
+        //just added
+        SearchView searchView = findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                statisticAdapter.filter(query);
+                return true;
+            }
 
-
-
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                statisticAdapter.filter(newText);
+                return true;
+            }
+        });
 
         APIHandler apiHandler = new APIHandler();
         apiHandler.requestReponse(this);
@@ -60,11 +74,16 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
             for (int i = 0; i < jsonArrayCounties.length(); i++) {
                 JSONObject obj = jsonArrayCounties.getJSONObject(i);
                 String country = obj.getString("Country") ;
-                String confirmed = formatCases(obj.getString("TotalConfirmed"));
-                String recovered = formatCases(obj.getString("TotalRecovered"));
-                String death = formatCases(obj.getString("TotalDeaths"));
+                String confirmed = obj.getString("TotalConfirmed");
+                String recovered = obj.getString("TotalRecovered");
+                String death = obj.getString("TotalDeaths");
+                String newConfirmed = obj.getString("NewConfirmed");
+                String newRecovered = obj.getString("NewRecovered");
+                String newDeath = obj.getString("NewDeaths");
+
                 com.example.covidalert.Statistic statistic =
-                        new com.example.covidalert.Statistic(country, confirmed, recovered, death);
+                        new com.example.covidalert.Statistic(country, confirmed, recovered, death,
+                                newConfirmed, newRecovered, newDeath);
                 statisticList.add(statistic);
             }
 

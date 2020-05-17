@@ -11,12 +11,16 @@
  > May 11th
  - Created StatisticActivity for the statistic section
  - Created StatisticAdapter & Statistic files for RecyclerView in StatisticActivity
- - Created APIHandler for requesting JSON from Covid19 API.
- - Parsed JSON data from Covid19 API and filled RecyclerView with Country name, Confirmed Cases, Recovered Cases and Death Cases.
+ - Created APIHandler for requesting JSON from Covid-19 API.
+ - Parsed JSON data from Covid-19 API and filled RecyclerView with Country name, Confirmed Cases, Recovered Cases and Death Cases.
  > May 12th
  - Added wireframe design
  - Created text view to show date the data was last updated
  - Added circular progress bar
+ > May 17th
+ - Added recycler view search functionality
+ - Removed static recycler view sizing (E.g. defined width (100dp) and height (50dp))
+ > Summary (Written May 17th)
+ - Second week of production and most of the functionality has been added. Definitely caught up and achieved the desired weekly milestone. Next week I will continue to work on the Statistics page by integrating the google maps API and comment on existing code.
  #TO-DO
- - Add search functionality
- - Comment
+ - Comments

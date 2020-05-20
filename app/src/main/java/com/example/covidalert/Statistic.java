@@ -1,5 +1,6 @@
 package com.example.covidalert;
 
+//Hold information about the statistic
 public class Statistic {
     private String countryName, confirmedCases, recoveredCases, deathCases, newConfirmed, newRecovered, newDeath;
 
@@ -14,6 +15,7 @@ public class Statistic {
         this.newDeath = newDeath;
     }
 
+    //Getter and setter methods
     public String getNewConfirmed() {
         return newConfirmed;
     }

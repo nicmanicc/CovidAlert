@@ -22,5 +22,11 @@
  - Removed static recycler view sizing (E.g. defined width (100dp) and height (50dp))
  > Summary (Written May 17th)
  - Second week of production and most of the functionality has been added. Definitely caught up and achieved the desired weekly milestone. Next week I will continue to work on the Statistics page by integrating the google maps API and comment on existing code.
+# Week 3
+ > May 20th
+ - Added comments to code
+ - Keyboard now closes after search button is pressed in search
+ - Minor changes to StatisticActivity layout (Search view and Text View (for date) adjusted)
+ - Date is altered to only show year-month-day (previously year-month-day-time)
  #TO-DO
- - Comments
+ - Add google maps API to display country location

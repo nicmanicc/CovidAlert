@@ -14,11 +14,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button statisticButton = findViewById(R.id.statisticsButton);
-
+        //Add onclick listener to start new activity
         statisticButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Create an intent for the StatisticActivity
                 Intent intent = new Intent(MainActivity.this, StatisticActivity.class);
+                //Start StatisticActivity
                 startActivity(intent);
             }
         });

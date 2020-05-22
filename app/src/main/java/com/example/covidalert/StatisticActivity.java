@@ -75,6 +75,7 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
     country statistics is used to update the recycler view in the activity. */
     @Override
     public void onSuccess(final String response) {
+
         //Error handling
         try {
             //Sets progress wheel to invisible (everything will begin to load in)
@@ -87,16 +88,16 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
             //Pull the global JSON object from jsonObjectResponse
             JSONObject jsonObjectGlobal = jsonObjectResponse.getJSONObject("Global");
             //Save and format (1000 => 1,000) the global statistics from jsonObjectGlobal
-            mTotalSummary = formatCases(jsonObjectGlobal.getString("TotalConfirmed"));;
+            mTotalSummary = formatCases(jsonObjectGlobal.getString("TotalConfirmed"));
             mRecoveredSummary = formatCases(jsonObjectGlobal.getString("TotalRecovered"));
             mDeathSummary = formatCases(jsonObjectGlobal.getString("TotalDeaths"));
             //Pull the countries JSON array from jsonObjectResponse
-            JSONArray jsonArrayCounties = jsonObjectResponse.getJSONArray("Countries");
+            JSONArray jsonArrayCountries = jsonObjectResponse.getJSONArray("Countries");
 
             //Retrieve individual country statistics from each object within the array
-            for (int i = 0; i < jsonArrayCounties.length(); i++) {
+            for (int i = 0; i < jsonArrayCountries.length(); i++) {
                 //Create a JSON object from position i in the array
-                JSONObject obj = jsonArrayCounties.getJSONObject(i);
+                JSONObject obj = jsonArrayCountries.getJSONObject(i);
                 //Save individual country statistic information
                 String country = obj.getString("Country") ;
                 String confirmed = obj.getString("TotalConfirmed");
@@ -105,18 +106,21 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
                 String newConfirmed = obj.getString("NewConfirmed");
                 String newRecovered = obj.getString("NewRecovered");
                 String newDeath = obj.getString("NewDeaths");
+                String countrySlug = obj.getString("Slug");
 
                 //Create a statistic object from the previously saved statistic information
                 com.example.covidalert.Statistic statistic =
                         new com.example.covidalert.Statistic(country, confirmed, recovered, death,
-                                newConfirmed, newRecovered, newDeath);
+                                newConfirmed, newRecovered, newDeath, countrySlug);
                 //Add statistic to statisticList
                 statisticList.add(statistic);
             }
             //Save the date and time the statistics were last updated.
-            mDate = jsonArrayCounties.getJSONObject(0).getString("Date");
+            mDate = jsonArrayCountries.getJSONObject(0).getString("Date");
             //Cut string to only include the date
             mDate = mDate.substring(0, 10);
+            //concatenate date with "Last updated: "
+            mDate = this.getResources().getString(R.string.date, mDate);
         //Print exception
         } catch (JSONException e) {
             e.printStackTrace();
@@ -126,7 +130,7 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
             @Override
             public void run() {
                 //Updates recycler view
-                updateRecyclerView();;
+                updateRecyclerView();
                 //Updates text views within the activity
                 updateTextView();
             }
@@ -162,12 +166,12 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
         totalSummaryView.setText(mTotalSummary);
         recoveredSummaryView.setText(mRecoveredSummary);
         deathSummaryView.setText(mDeathSummary);
-        dateView.setText("Last updated: " + mDate);
+        dateView.setText(mDate);
     }
     /* Overview: Adds symbols to numbers to make them more readable.
     The symbol will depends on what location they're in.
     E.g. 1000 => 1,000 (for Aus) */
-    private String formatCases(String stringToFormat)
+    public static String formatCases(String stringToFormat)
     {
         //Turn the string into a number
         Number number = Integer.parseInt(stringToFormat);

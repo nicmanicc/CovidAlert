@@ -65,7 +65,6 @@ public class StatisticAdapter extends RecyclerView.Adapter<StatisticAdapter.Stat
         cases are a non-zero value.  */
     @Override
     public void onBindViewHolder(@NonNull StatisticAdapter.StatisticViewHolder statisticViewHolder, int i) {
-        //Retrieve individual country statistic values
         final String countryName = statisticList.get(i).getmCountryName();
         final String confirmedCases = statisticList.get(i).getmConfirmedCases();
         final String recoveredCases = statisticList.get(i).getmRecoveredCases();
@@ -87,22 +86,18 @@ public class StatisticAdapter extends RecyclerView.Adapter<StatisticAdapter.Stat
         statisticViewHolder.newRecovered.setText(newRecovered);
         statisticViewHolder.newDeath.setText(newDeath);
 
-        //Get the slug (used to search in google maps api)
         final String countrySlug = statisticList.get(i).getmCountrySlug();
 
-        //Create onclick listener for the map button and start map activity
+        //Create onclick listener for the map button
         statisticViewHolder.mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Create new intent for the map activity
                 Intent intent = new Intent(context, MapsActivity.class);
-                //Store statistic details to display in the marker window
                 intent.putExtra("Slug", countrySlug);
                 intent.putExtra("confirmed", confirmedCases);
                 intent.putExtra("recovered", recoveredCases);
                 intent.putExtra("deaths", deathCases);
                 intent.putExtra("country", countryName);
-                //Start map activity
                 context.startActivity(intent);
             }
         });

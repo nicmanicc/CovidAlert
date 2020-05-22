@@ -17,7 +17,7 @@ public class APIHandler {
     public interface CallBack
     {
         //Executed if response was successful
-        public void onSuccess(String response);
+        void onSuccess(String response);
     }
     //Class constructor. Creates an OkHTTP client.
     public APIHandler() {
@@ -55,6 +55,7 @@ public class APIHandler {
                         //Send response to activity to be handled
                         activity.onSuccess(myResponse);
                     }
+
                 }
             }
         });

@@ -28,5 +28,10 @@
  - Keyboard now closes after search button is pressed in search
  - Minor changes to StatisticActivity layout (Search view and Text View (for date) adjusted)
  - Date is altered to only show year-month-day (previously year-month-day-time)
- #TO-DO
- - Add google maps API to display country location
+ > May 21st
+ - Refactored project to Androidx for Google Maps API capabilities
+ - Added google maps activity
+ - Created functionality where a country is shown in google maps when its button is clicked in the recycler view.
+ > May 23rd
+ - Added custom info box that displays country name and total cases
+ - Added button that shows and hides the custom info box

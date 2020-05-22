@@ -103,4 +103,15 @@
         app:layout_constraintStart_toStartOf="@+id/deathView"
         app:layout_constraintTop_toBottomOf="@+id/deathView" />
 
+    <ImageButton
+        android:id="@+id/mapButton"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/map_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

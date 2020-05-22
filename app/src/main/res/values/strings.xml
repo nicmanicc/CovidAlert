@@ -11,4 +11,7 @@
     <string name="summary_Recovered">RECOVERED</string>
     <string name="summary_death">DEATHS</string>
     <string name="summary_title">WORLDWIDE COVID-19 CASES</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="newCases">+ %s</string>
+    <string name="date">Last updated: %s</string>
 </resources>

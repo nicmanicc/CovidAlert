@@ -5,3 +5,5 @@
 - safety_icon_64x. free icon, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon
 - statistics_image, CC BY 3.0 license, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon
 - statistics_image_64x, CC BY 3.0 license, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon
+- map_icon, CC BY 3.0 license, https://www.iconfinder.com/icons/285662/map_icon
+- info_icon, CC BY-ND 3.0 license, https://www.iconfinder.com/icons/172483/info_icon

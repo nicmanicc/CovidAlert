@@ -1,0 +1,23 @@
+<resources>
+    <!--
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=E9:B6:D7:87:A2:C6:C4:F6:DF:1F:AA:FA:10:BE:CE:5F:28:5F:2F:4E%3Bcom.example.covidalert
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.covidalert
+
+    SHA-1 certificate fingerprint:
+    E9:B6:D7:87:A2:C6:C4:F6:DF:1F:AA:FA:10:BE:CE:5F:28:5F:2F:4E
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="covidAlert_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBfF4PUoVtnQFEDr5T18SxmqSkUPwCmZXI</string>
+</resources>

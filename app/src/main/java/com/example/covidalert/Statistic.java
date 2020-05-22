@@ -1,74 +1,83 @@
 package com.example.covidalert;
 
+import android.widget.ImageButton;
+
 //Hold information about the statistic
 public class Statistic {
-    private String countryName, confirmedCases, recoveredCases, deathCases, newConfirmed, newRecovered, newDeath;
+    private String mCountryName, mConfirmedCases, mRecoveredCases, mDeathCases, mNewConfirmed, mNewRecovered, mNewDeath, mCountrySlug;
 
-    public Statistic(String countryName, String confirmedCases, String recoveredCases,
-                     String deathCases, String newConfirmed, String newRecovered, String newDeath) {
-        this.countryName = countryName;
-        this.confirmedCases = confirmedCases;
-        this.recoveredCases = recoveredCases;
-        this.deathCases = deathCases;
-        this.newConfirmed = newConfirmed;
-        this.newRecovered = newRecovered;
-        this.newDeath = newDeath;
+    public String getmCountrySlug() {
+        return mCountrySlug;
     }
 
-    //Getter and setter methods
-    public String getNewConfirmed() {
-        return newConfirmed;
+    public void setmCountrySlug(String mCountrySlug) {
+        this.mCountrySlug = mCountrySlug;
     }
 
-    public void setNewConfirmed(String newConfirmed) {
-        this.newConfirmed = newConfirmed;
+    public Statistic(String mCountryName, String mConfirmedCases, String mRecoveredCases, String mDeathCases, String mNewConfirmed, String mNewRecovered, String mNewDeath, String mCountrySlug) {
+        this.mCountryName = mCountryName;
+        this.mConfirmedCases = mConfirmedCases;
+        this.mRecoveredCases = mRecoveredCases;
+        this.mDeathCases = mDeathCases;
+        this.mNewConfirmed = mNewConfirmed;
+        this.mNewRecovered = mNewRecovered;
+        this.mNewDeath = mNewDeath;
+        this.mCountrySlug = mCountrySlug;
     }
 
-    public String getNewRecovered() {
-        return newRecovered;
+    public String getmCountryName() {
+        return mCountryName;
     }
 
-    public void setNewRecovered(String newRecovered) {
-        this.newRecovered = newRecovered;
+    public void setmCountryName(String mCountryName) {
+        this.mCountryName = mCountryName;
     }
 
-    public String getNewDeath() {
-        return newDeath;
+    public String getmConfirmedCases() {
+        return mConfirmedCases;
     }
 
-    public void setNewDeath(String newDeath) {
-        this.newDeath = newDeath;
+    public void setmConfirmedCases(String mConfirmedCases) {
+        this.mConfirmedCases = mConfirmedCases;
     }
 
-    public String getCountryName() {
-        return countryName;
+    public String getmRecoveredCases() {
+        return mRecoveredCases;
     }
 
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
+    public void setmRecoveredCases(String mRecoveredCases) {
+        this.mRecoveredCases = mRecoveredCases;
     }
 
-    public String getConfirmedCases() {
-        return confirmedCases;
+    public String getmDeathCases() {
+        return mDeathCases;
     }
 
-    public void setConfirmedCases(String confirmedCases) {
-        this.confirmedCases = confirmedCases;
+    public void setmDeathCases(String mDeathCases) {
+        this.mDeathCases = mDeathCases;
     }
 
-    public String getRecoveredCases() {
-        return recoveredCases;
+    public String getmNewConfirmed() {
+        return mNewConfirmed;
     }
 
-    public void setRecoveredCases(String recoveredCases) {
-        this.recoveredCases = recoveredCases;
+    public void setmNewConfirmed(String mNewConfirmed) {
+        this.mNewConfirmed = mNewConfirmed;
     }
 
-    public String getDeathCases() {
-        return deathCases;
+    public String getmNewRecovered() {
+        return mNewRecovered;
     }
 
-    public void setDeathCases(String deathCases) {
-        this.deathCases = deathCases;
+    public void setmNewRecovered(String mNewRecovered) {
+        this.mNewRecovered = mNewRecovered;
+    }
+
+    public String getmNewDeath() {
+        return mNewDeath;
+    }
+
+    public void setmNewDeath(String mNewDeath) {
+        this.mNewDeath = mNewDeath;
     }
 }

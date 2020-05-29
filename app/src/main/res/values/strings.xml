@@ -14,4 +14,17 @@
     <string name="title_activity_maps">Map</string>
     <string name="newCases">+ %s</string>
     <string name="date">Last updated: %s</string>
+    <string name="info_paragraph1">
+        COVID-19 is a new infectious disease caused by Coronavirus. It is a
+        respiratory virus that spreads through an infected persons sneeze,
+        cough or speech. It can also spread through surfaces an infected
+        person has been in contact with.
+    </string>
+    <string name="info_paragraph2">
+        Common symptoms of COVID-19 are fever, dry cough and tiredness.
+        Less common symptoms are aches and pains, sore throat, diarrhea,
+        headaches and loss of taste or smell. Serious symptoms are
+        difficulty breathing or shortness of breath, chest pain and loss
+        of speech or movement.
+    </string>
 </resources>

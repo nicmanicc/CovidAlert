@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button statisticButton = findViewById(R.id.statisticsButton);
+        Button informationButton = findViewById(R.id.informationButton);
         //Add onclick listener to start new activity
         statisticButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,7 +22,16 @@ public class MainActivity extends AppCompatActivity {
                 //Create an intent for the StatisticActivity
                 Intent intent = new Intent(MainActivity.this, StatisticActivity.class);
                 //Start StatisticActivity
-                startActivity(intent);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        informationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+
+               MainActivity.this.startActivity(intent);
             }
         });
     }

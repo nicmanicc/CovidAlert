@@ -37,3 +37,7 @@
  - Added button that shows and hides the custom info box
  > Summary (Written May 24th)
  - This week every feature that has to do with covid-19 statistics is completed and some general tweaks to code were added for usability purposes. Next week will be focused on adding information and media. I hope to finish the first release of the project this week and use the last week for general editing and preparation for submission.
+# Week 4
+ > May 30th
+ - Created info activity that has information about what COVID-19 is and how it spreads
+ - Added YouTube API and added "What is Coronavirus (COVID-19)" video to info activity

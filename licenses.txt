@@ -7,3 +7,7 @@
 - statistics_image_64x, CC BY 3.0 license, https://www.iconfinder.com/icons/5932490/coronavirus_covid_mask_icon
 - map_icon, CC BY 3.0 license, https://www.iconfinder.com/icons/285662/map_icon
 - info_icon, CC BY-ND 3.0 license, https://www.iconfinder.com/icons/172483/info_icon
+- safety_mask, CC BY-SA 3.0 license, https://www.iconfinder.com/icons/5879304/corona_coronavirus_facemask_protection_virus_icon
+- safety_hygiene, CC BY-SA 3.0 license, https://www.iconfinder.com/icons/5864851/coronavirus_covid19_disease_hands_soap_wash_icon
+- safety_distance, CC BY 3.0 license, https://www.iconfinder.com/icons/5980385/coronavirus_distance_distancing_isolate_people_social_space_icon
+- safety_iso, CC BY 3.0 license, https://www.iconfinder.com/icons/5980398/alone_coronavirus_home_isolate_qaunrantine_quarantine_safety_icon

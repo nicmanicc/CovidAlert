@@ -41,3 +41,10 @@
  > May 30th
  - Created info activity that has information about what COVID-19 is and how it spreads
  - Added YouTube API and added "What is Coronavirus (COVID-19)" video to info activity
+ > May 31st
+ - Created safety activity that has information about keeping safe during the COVID-19 pandemic
+ - Added drawables to round text view corners
+ - Added images to add in the safety activity
+ - Updated licenses.txt
+ > Summary (Written May 31st)
+ - Apart from comments the app is now ready to be submitted and released. This week wasn't as busy as it was just adding design/information to two activities which wasn't difficult at all. Next week will be spent cleaning up and commenting code so it is ready to be submitted on friday the 5th.

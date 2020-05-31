@@ -27,4 +27,24 @@
         difficulty breathing or shortness of breath, chest pain and loss
         of speech or movement.
     </string>
+    <string name="safety_context">
+        The following information are some tips and precautions you can take
+        to reduce the chances of getting and spreading COVID-19.
+    </string>
+    <string name="safety_hygiene">
+        Washing your hands regularly with soap and water. Using alcohol-based
+        sanitisers to keep your hands clean.
+    </string>
+    <string name="safety_masks">
+        Wearing a mask reduces the spread of the virus as they can prevent
+        you coughing on others.
+    </string>
+    <string name="safety_distancing">
+        Stay 1.5 metres from others when outside and avoid shaking hands,
+        kissing or hugging other people.
+    </string>
+    <string name="safety_isolation">
+        Stay at home unless you are leaving to do an essential activity.
+    </string>
+    <string name="safety_activity">Safety Information</string>
 </resources>

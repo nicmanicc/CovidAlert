@@ -13,7 +13,7 @@
     <string name="summary_title">WORLDWIDE COVID-19 CASES</string>
     <string name="title_activity_maps">Map</string>
     <string name="newCases">+ %s</string>
-    <string name="date">Last updated: %s</string>
+    <string name="date">Last updated: %s - \'+\' refers to yesterdays cases</string>
     <string name="info_paragraph1">
         COVID-19 is a new infectious disease caused by Coronavirus. It is a
         respiratory virus that spreads through an infected persons sneeze,
@@ -47,4 +47,5 @@
         Stay at home unless you are leaving to do an essential activity.
     </string>
     <string name="safety_activity">Safety Information</string>
+    <string name="statistic_refresh">Refresh</string>
 </resources>

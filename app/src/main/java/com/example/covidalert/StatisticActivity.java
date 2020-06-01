@@ -1,12 +1,16 @@
 package com.example.covidalert;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -67,6 +71,39 @@ public class StatisticActivity extends AppCompatActivity implements APIHandler.C
         APIHandler apiHandler = new APIHandler();
         //Ask API handler to request a response from covid-19 API
         apiHandler.requestReponse(this);
+
+        //Get refresh button from activity
+        final Button refreshButton = findViewById(R.id.refreshButton);
+        //Set the refresh button to invisible
+        refreshButton.setVisibility(View.INVISIBLE);
+
+        //Create a new handler object
+        final Handler handler = new Handler();
+        //Create a new runnable to run after 5 seconds has elapsed
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                //Get the total summary cases view from activity
+                TextView totalSummaryView = findViewById(R.id.confirmedSummary);
+                //Check if the total summary cases view is empty (meaning data hasn't loaded)
+                if (totalSummaryView.getText().toString().equals("")) {
+                    //Set refresh button to visible
+                    refreshButton.setVisibility(View.VISIBLE);
+                    //Create an on click listener for the refresh button
+                    refreshButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            //Get this activities intent
+                            Intent intent = getIntent();
+                            //Finish using activity
+                            finish();
+                            //Start the same activity ("Restarting it")
+                            startActivity(intent);
+                        }
+                    });
+                }
+            }
+        }, 5000); //Delay 5000ms => 5 seconds
     }
     /* Overview: Used to handle the string response received from OkHTTP
     request in the APIHandler class. Done by retrieving the global and individual

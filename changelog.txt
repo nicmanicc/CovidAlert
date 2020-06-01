@@ -48,3 +48,10 @@
  - Updated licenses.txt
  > Summary (Written May 31st)
  - Apart from comments the app is now ready to be submitted and released. This week wasn't as busy as it was just adding design/information to two activities which wasn't difficult at all. Next week will be spent cleaning up and commenting code so it is ready to be submitted on friday the 5th.
+# Week 5
+ > June 2nd
+ - Commented on InfoActivity (Youtube API code)
+ - Removed unused imports
+ - Changes statistic button image
+ - Added a delay method to run after 5s and refresh the StatisticActivity if the data hasn't loaded
+ 

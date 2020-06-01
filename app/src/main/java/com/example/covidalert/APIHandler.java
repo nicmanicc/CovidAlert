@@ -1,6 +1,5 @@
 package com.example.covidalert;
 
-import android.app.Activity;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import okhttp3.Call;

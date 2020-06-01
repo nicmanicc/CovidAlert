@@ -1,7 +1,5 @@
 package com.example.covidalert;
 
-import android.widget.ImageButton;
-
 //Hold information about the statistic
 public class Statistic {
     private String mCountryName, mConfirmedCases, mRecoveredCases, mDeathCases, mNewConfirmed, mNewRecovered, mNewDeath, mCountrySlug;

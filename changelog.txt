@@ -56,4 +56,3 @@
  - Added a delay method to run after 5s and refresh the StatisticActivity if the data hasn't loaded
 > June 4th
  - Minor tweaks to SafetyActivity layout and InfoActivity colours
- 
